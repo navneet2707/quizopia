@@ -1,0 +1,1 @@
+ALTER TABLE public.quizzes ADD COLUMN difficulty text NOT NULL DEFAULT 'medium';

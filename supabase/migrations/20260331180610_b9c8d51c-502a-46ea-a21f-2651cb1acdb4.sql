@@ -1,0 +1,1 @@
+ALTER TABLE public.quizzes ADD COLUMN max_attempts integer NOT NULL DEFAULT 1;
