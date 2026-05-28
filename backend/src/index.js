@@ -17,12 +17,10 @@ const { initDatabase } = require('./database');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Vite dev server
+  origin: '*',
   credentials: true
 }));
-app.use(express.json());
 
 // Initialize database
 initDatabase();
